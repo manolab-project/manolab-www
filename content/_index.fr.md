@@ -12,44 +12,61 @@ Manolab est un logiciel d'automatisation industrielle libre à base de scripts. 
 - Le support d"équipements industriels : Voltmètre, puissance-mètre
 - Client HTTP 
 
+C'est un logiciel pouvant fonctionner via une inetrface graphique ou en ligne de commandes. Les usages typiques sont :
 
-# 
+- Test / contrôle / de production de cartes électroniques
+- Tests d'intégration / R&D / Conception électronique et mise au point de firmware
+- Domotique sur Raspberry PI
+- Kiosques tactiles / tablettes
+
+## Illustration des usages
+
+Le diagramme suivant vous permet de visualiser d'un coup d'oeil les possibilités du logiciel :
+
+L'usage est assez générique mais avec une forte ortientation industrielle. Cette solution libre ets toute à fait composarable à des solutions propriétaires existantes.
+
+## À quoi cela ressemble
+
+Manolab est composé de plusieurs logiciels mais l'interface graphique standard, Manolab Studio, vous permet d'éditer et d'exécuter des scripts de test.
 
 
-[Hugo-theme-learn](http://github.com/matcornic/hugo-theme-learn) est un thème pour [Hugo](https://gohugo.io/), un générateur de site statique, rapide et modern, écrit en Go. Tandis que Hugo est souvent utilisé pour des blogs, ce thème multi-langue est **entièrement conçu pour la documentation**.
+## Planning & évolutions
 
-Ce thème est un portage partiel du [thème Learn](http://learn.getgrav.org/) de [Grav](https://getgrav.org/), un CMS modern écrit en PHP.
+Il est prévu l'ajout des fonctions suivantes :
 
-{{% notice tip %}}Le thème Learn fonctionne grâce à la structure de page aborescentes pour organiser le contenu: tous les contenus sont des pages qui appartiennent à d'autres pages. [Plus d'infos]({{%relref "cont/pages/_index.md"%}}) 
-{{% /notice %}}
+- Place de marché d'extensions
+- De nouveaux protocoles
+- Le support de périphériques certifiés
+- Le support de périphériques de marque **Manolab** !
 
-## Fonctionnalités principales
 
-* [Recherche automatique]({{%relref "basics/configuration/_index.md#activer-recherche" %}})
-* [Mode multi-langue]({{%relref "cont/i18n/_index.md" %}})
-* **Nombre de niveau infini dans le menu**
-* **Boutons suivant/précédent automatiquement générés pour naviguer entre les items du menu**
-* [Taille d'image, ombres...]({{%relref "cont/markdown.fr.md#images" %}})
-* [Fichiers joints]({{%relref "shortcodes/attachments.fr.md" %}})
-* [Lister les pages filles]({{%relref "shortcodes/children/_index.md" %}})
-* [Diagrammes Mermaid]({{%relref "shortcodes/mermaid.fr.md" %}}) (flowchart, sequence, gantt)
-* [Style configurable and variantes de couleurs]({{%relref "basics/style-customization/_index.md"%}})
-* [Boutons]({{%relref "shortcodes/button.fr.md" %}}), [Messages Astuce/Note/Info/Attention]({{%relref "shortcodes/notice.fr.md" %}}), [Expand]({{%relref "shortcodes/expand.fr.md" %}})
+## Code source
 
-![Screenshot](https://github.com/matcornic/hugo-theme-learn/raw/master/images/screenshot.png?width=40pc&classes=shadow)
+Le code source du projet est [disponible sur Github](https://github.com/manolab-project)
 
-## Contribuer à cette documentation
 
-N'hésitez pas à mettre à jour ce contenu en cliquant sur le lien **Modifier cette page** en haut de chaque page, et créer la Pull Request associée.
+## Licence
 
-{{% notice info %}}
-Votre modification sera déployée automatiquement quand elle sera mergée.
-{{% /notice %}}
+```
+MIT License
 
-## Site de documentation
+Copyright (c) 2019-2099 Anthony Rabine
 
-Cette documentation statique a été générée avec Hugo avec une simple commande : `hugo -t hugo-theme-learn` -- le code source est [disponible sur Github](https://github.com/matcornic/hugo-theme-learn)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-{{% notice note %}}
-Le site est auomatiquement publié et hébergé par [Netlify](https://www.netlify.com/). Plus d'infos sur le [déploiement de site Hugo avec Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)(En anglais)
-{{% /notice %}}
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

@@ -28,7 +28,7 @@ jobs:
         with:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./
-          external_repository: manolab-project.github.io
+          external_repository: manolab-project/manolab-project.github.io
           # Without `keep_files` the `CNAME` file in the target repo will get removed
           # and the custom domain configured for GitHub pages will get dropped every 
           # time the action runs

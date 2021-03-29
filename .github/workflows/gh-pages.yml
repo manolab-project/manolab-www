@@ -27,8 +27,10 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./
           external_repository: manolab-project.github.io
-          publish_dir: ./public
-          #   keep_files: true
+          # Without `keep_files` the `CNAME` file in the target repo will get removed
+          # and the custom domain configured for GitHub pages will get dropped every 
+          # time the action runs
+          keep_files: true
           publish_branch: gh-pages
